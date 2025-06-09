@@ -1,0 +1,133 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 0.75rem;
+}
+
+.content-container {
+  max-width: 48rem;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-section div {
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+  width: 100%;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  width: 100%;
+}
+
+.about-section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-section p {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.about-section a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.credentials-section {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.credentials-section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .profile-section {
+    flex-direction: row;
+  }
+  .image-section {
+    width: 33.333333%;
+  }
+  .about-section {
+    width: 66.666667%;
+  }
+  .credentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.credential-box {
+  padding: 0.5rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+}
+
+.credential-box p {
+  margin: 0;
+}
+
+.credential-box p:first-child {
+  font-weight: 600;
+}
+
+.credential-box p:last-child {
+  color: #4b5563;
+}
